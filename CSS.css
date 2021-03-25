@@ -17,9 +17,8 @@ body {
 
 }
 .logo {
-    margin-top: 15px;
+    margin: 5px auto;
     color: white;
-    font: 15px;
     float: left;
 }
 #orange {
