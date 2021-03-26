@@ -1,3 +1,4 @@
+/* inicio cabeçalho */
 body {
     margin: 0;
     padding: 0;
@@ -22,15 +23,122 @@ body {
     float: left;
 }
 #orange {
-    color: orange;
+    color: orangered;
 }
 
 .div_cabecalho nav {
     float: right;
 }
-ul li {
+.div_cabecalho ul li {
     color: white;
     display: inline;
     margin-left: 20px;
     font-size: 15px;
+
   }
+  /* fim cabeçalho */
+
+  /* incio envio email */
+  .div_up ul li {
+    color: white;
+    display: inline;
+    font-size: 15px;
+  }
+  .div_up nav {
+    float: right;
+  }
+  .div_up {
+    padding-top: 20px;
+    background-color: black;
+    width: 100%;
+    height: 75px;
+  }
+  .up_caixa{
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    
+  }
+  #b_enviar {
+      background-color: orangered;
+      color: white;
+      padding: 10px 10px 10px 10px;
+      border: none;
+  }
+#inp_email {
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
+  /* inicio apresentação */
+  .caixa_apresentacao{
+    background-image: url(./team.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+  }
+  .caixa_apresentacao h1 {
+      margin: 0;
+      padding: 0;
+  }
+  /* Fim apresentação */
+  /* Começo Infor */
+.caixa_info{
+    max-width: 100%;
+    height: 200px;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.caixa_info img{
+    width: 100px;
+}
+.caixa_info div {
+    min-width: 100%;
+}
+.caixa_info p {
+    text-align: center;
+    float: left;
+    max-width: 100px;
+    max-width: 300px;
+}
+#img_missao {
+    margin-left: 15%;
+}
+#img_valores {
+    margin-left: 20%;
+    margin-right: 15% ;
+}
+#img_visao {
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+#text_missao {
+    margin-left: 4%;
+}
+
+#text_valores {
+    margin-left:1%;
+    margin-right: 1%;
+}
+#text_visao{
+    margin-left: 0%;
+    margin-right: 1%;
+}
+  /* Fim infor */
+  /* incio rodapé */
+.rodape {
+    background-color: orangered;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.rodape p {
+    padding-top: 4%;
+}
+  /* Fim rodapé */
