@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS-dashbord.css">
+    <link rel="stylesheet" href="../CSS-inicio.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js"
+        integrity="sha512-RGbSeD/jDcZBWNsI1VCvdjcDULuSfWTtIva2ek5FtteXeSjLfXac4kqkDRHVGf1TwsXCAqPTF7/EYITD0/CTqw=="
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- inicio cabeçalho -->
+    <div class="div_cabecalho">
+        <div class="div_caixa">
+            <h1 class="logo">
+                <span id="orange">Projeto</span> Iot Revolucionario
+            </h1>
+            <nav>
+                <ul>
+                    <li id="orange">Home</li>
+                    <li>Sobre</li>
+                    <li>Cadastro</li>
+                    <li>Login</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="linha"></div>
+    <!-- Fim cabeçalho -->
+
+    <!-- Inicio dash -->
+    <div class="dash_box">
+        <div id="g1">
+            <canvas id="myChart" class="graf1"></canvas>
+        </div>
+        <div id="g2">
+            <canvas id="myChart2" class="graf2"></canvas>
+        </div>
+    </div>
+    <!-- Fim dash -->
+
+    <!-- Inicio rodape -->
+    <div class="rodape">
+        <p>Feito com carinho por um aluno BandTec</p>
+    </div>
+    <!-- Fim rodape -->
+</body>
+
+</html>
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var xtc = document.getElementById('myChart2').getContext('2d');
+
+
+    var myChart = new Chart(ctx, {
+        type: 'polarArea',
+        data: {
+            labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab', 'Dom'],
+            datasets: [{
+                label: 'alcance do projeto durante a semana (pessoas)',
+                data: [150, 130, 100, 600, 435, 700],
+                backgroundColor: [
+                    '#00d7ff66',
+                    '#ebb0d766',
+                    '#80008066',
+                    '#2d120666',
+                    '#16ffdc66',
+                    '#0036b366'
+                ],
+                borderColor: [
+                    '#00d7ff',
+                    '#ebb0d7',
+                    '#800080',
+                    '#2d1206',
+                    '#16ffdc',
+                    '#0036b3'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+
+    var myChart2 = new Chart(xtc, {
+        type: 'pie',
+        data: {
+            labels: ['5-8', '9-12', '13-15', '16-18', '19-21'],
+            datasets: [{
+                label: 'Usuarios da plataforma',
+                data: [200, 100, 350, 255, 895, 900],
+                backgroundColor: [
+                    '#acff2766',
+                    '#e6800066',
+                    '#009a2e66',
+                    '#cd007766',
+                    '#a3009366',
+                    '#8cfbff66'
+                ],
+                borderColor: [
+                    '#acff27',
+                    '#e68000',
+                    '#009a2e',
+                    '#cd0077',
+                    '#a30093',
+                    '#8cfbff'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+</script>

@@ -1,0 +1,23 @@
+.dash_box {
+    background-color: aliceblue;
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+    display: inline-block;
+}
+#g1{
+    float: left;
+    width: 45%;
+}
+#g2{
+    float: right;
+    width: 45%;
+}
+
+.graf1 {
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.graf2 {
+    border: 2px solid gray;
+    border-radius: 10px;
+}
